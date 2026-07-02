@@ -1,0 +1,24 @@
+# dacc.schema.yml
+version: 1
+schemas:
+  - id: dacc
+    parent: root
+    children:
+      - id: source
+        desc: "Reading log entries — one per article, essay, or book"
+        namespace: true
+        template:
+          id: templates.dacc.source
+          type: note
+      - id: concept
+        desc: "Glossary entries — one per idea/term"
+        namespace: true
+        template:
+          id: templates.dacc.concept
+          type: note
+      - id: artefact
+        desc: "One per exhibit object"
+        namespace: true
+        template:
+          id: templates.dacc.artefact
+          type: note
